@@ -1,0 +1,121 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+#container{
+    background-color:hsl(0, 0%, 95%);
+    width: 100%;
+    padding: 100px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    
+}
+
+.box{
+    width:70%;
+    height:500px;
+    padding:15% 15%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    
+    
+}
+
+#box1{
+    background-color:hsl(31, 77%, 52%) ;
+    border-radius: 10px 10px 0px 0px;
+}
+
+#box2{
+    background-color:hsl(184, 100%, 22%);
+    
+}
+#box3{
+    background-color:hsl(179, 100%, 13%) ;
+    border-radius: 0px 0px 10px 10px;
+}
+
+h1{
+    color:hsl(0, 0%, 95%);
+    font-family: 'Big Shoulders Display', cursive; 
+    font-size: 3em;
+    margin: 15% 0%;
+    
+}
+
+p{
+    color:hsla(0, 0%, 100%, 0.75);
+    font-size: 15px;
+    font-family: 'Lexend Deca', sans-serif;
+    line-height: 25px;
+    margin-bottom: 30%;
+    
+}
+
+button{
+    font-family: 'Lexend Deca', sans-serif;
+    background-color:hsl(0, 0%, 95%) ;
+    border-radius: 50px;
+    border-color:hsl(0, 0%, 95%) ;
+    width:50%;
+    height:10%;
+    border-style: none;
+}
+
+
+#box1 button{
+    color:hsl(31, 77%, 52%) ;
+}
+
+#box2 button{
+    color:hsl(184, 100%, 22%) ;
+}
+
+#box3 button{
+    color:hsl(179, 100%, 13%)  ;
+}
+
+#box1 button:active, #box1 button:hover{
+    color:hsl(0, 0%, 95%);
+    background-color:hsl(31, 77%, 52%) ;
+    cursor: pointer;
+}
+#box2 button:active, #box2 button:hover{
+    color:hsl(0, 0%, 95%);
+    background-color:hsl(184, 100%, 22%) ;
+    cursor: pointer;
+}
+#box3 button:active, #box3 button:hover{
+    color:hsl(0, 0%, 95%);
+    background-color:hsl(179, 100%, 13%)  ;
+    cursor: pointer;
+}
+
+
+@media only screen and (min-width:1000px){
+    
+    #container{
+        padding: 300px 50px;
+        display:inline-flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .box{
+        width:20%;
+        padding:3% 3%;
+    }
+
+    #box1{
+        border-radius: 10px 0px 0px 10px;
+    }
+
+    #box3{
+        border-radius: 0px 10px 10px 0px;
+    }
+
+}
